@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Webpage Title</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body style="background-color: #E1E0DF;">
+
+<section id="banner">
+	<img class="logo">
+	<div class="banner-text">
+		<h1>Atoy's Pork Chop</h1>
+		<p>The Work of a group in Generosity</p>
+		<div class="banner-btn">
+			<a href="#"><span></span>Button 1</a>
+			<a href="#"><span></span>Button 2</a>
+		</div>
+</section>
+
+<div id="navbar">
+	<nav>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#feature">History</a></li>
+			<li><a href="#service">Menu</li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#">Meet Us</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="menubtn">
+	<img src="images/menu.png" id="menu">
+</div>
+
+<!--Features-->
+
+<section id="feature">
+	<div class="title-text">
+		<p>History</p>
+		<h1>The Start of Something Special</h1>
+	</div>
+
+	<div class="feature-box">
+		<div class="freatures">
+			<h1>History</h1>
+			<div class="freatures-desc">
+				<div class="freature-text">
+					<ul>
+						<li>Atoy’s Porkchop has come a long way since its beginnings. Initially founded by Mang Atoy and his wife, Luzviminda, in San Antonio, Laguna, it has expanded to include branches in BF Homes Paranaque and other parts of Metro Manila. Their dedication to providing top-notch pork chops has earned them a devoted following and a well-deserved reputation as the best in the neighborhood.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="freatures-img">
+			<img src="images/shop.jpg">
+		</div>
+	</div>
+</section>
+
+<!--Service-->
+
+<section id="service">
+	<div class="title-text">
+		<p>Menu Items</p>
+		<h1>Menu of Atoy's Pork Chop</h1>
+	</div>
+	<div class="service-box">
+		<main>
+		<div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Pork Chop</h2>
+            <p>A delicious chop of pork with a sunny side egg and fried rice</p>
+            <p>Price: $20</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Fried Chicken</h2>
+            <p>A Large Part of chicken with fried rice</p>
+            <p>Price: $30</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>Description of product 3.</p>
+            <p>Price: $20</p>
+            <button>Add to Cart</button>
+        </div>
+    	</main>
+	</div>
+	<div class="service-box">
+		<main>
+        <div class="product">
+            <img src="product4.jpg" alt="Product 4">
+            <h2>Product 4</h2>
+            <p>Description of product 4.</p>
+            <p>Price: $30</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product5.jpg" alt="Product 5">
+            <h2>Product 5</h2>
+            <p>Description of product 5.</p>
+            <p>Price: $20</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product6.jpg" alt="Product 6">
+            <h2>Product 6</h2>
+            <p>Description of product 6.</p>
+            <p>Price: $30</p>
+            <button>Add to Cart</button>
+        </div>
+		</main>
+	</div>
+</section>
+
+<!-- Testimonial -->
+
+<section id="testimonial">
+	<div class="title-text">
+		<p>TESTIMONIAL</p>
+		<h1>A Few Words from Customers</h1>
+	</div>
+	<div class="testimonial-row">
+		<div class="testimonial-col">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="testimonial-col">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+
+
+</section>
+
+
+<script>
+var menubtn = document.getElementById("menubtn")
+var navbar = document.getElementById("navbar")
+var menu = document.getElementById("menu")
+
+navbar.style.right = "-250px"
+
+menubtn.onclick = function(){
+	if(navbar.style.right == "-250px"){
+		navbar.style.right = "0";
+		menu.src = "images/close.png"
+	}
+	else{
+		navbar.style.right = "-250px";
+		menu.src = "images/menu.png"
+	}
+}
+</script>
+
+</body>
+</html>

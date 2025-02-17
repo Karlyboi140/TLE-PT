@@ -1,0 +1,269 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+#banner{
+	background: linear-gradient(rgba(0,0,0,0.5),#E55D37), url(images/banner1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.logo{
+	width: 120px;
+	position: absolute;
+	top: 4%;
+	left: 10%;
+}
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 180px;
+}
+.banner-text h1{
+	font-size: 130px;
+	font-family: 'kaushan Script', cursive;
+}
+.banner-text p{
+	font-size: 20px;
+	font-style: italic;
+}
+.banner-btn{
+	margin: 70px;
+}
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 	100%;
+}
+.banner-btn a:hover{
+	color: #000;
+}
+#navbar{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: #E55D37;
+	z-index: 2;
+	transition: 0.5s;
+}
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+}
+nav ul li a{
+	display: inline-block;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+}
+nav ul li a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background-color: #f1f2e0;
+	transition: 0.5s;
+}
+nav ul li a:hover::after{
+	width: 100%;
+}
+#menubtn{
+	width: 50px;
+	height: 50px;
+	background: #E55D37;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+#menubtn img{
+	width: 45px;
+	margin-top: 3px;
+}
+@media screen and (max-width: 770px){
+	.banner-text h1{
+		font-size: 44px;
+	}
+	.banner-btn a{
+		display: block;
+		margin: 20px auto;
+	}
+}
+@media screen and (max-width: 1280px){
+	.banner-text h1{
+		font-size: 60px;
+	}
+}
+
+/*--feature--*/
+
+#feature{
+	width: 100%;
+	padding: 70px 0;
+}
+.title-text{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.title-text p{
+	margin: auto;
+	font-size: 24px;
+	color: #FF683E;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+.title-text p::after{
+	content: '';
+	width: 60px;
+	height: 35px;
+	background: linear-gradient(#00A55B,#cac9c8);
+	position: absolute;
+	top: -20px;
+	left: 0;
+	z-index: -1;
+	transform: rotate(10deg);
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+.title-text h1 {
+	font-size: 50px;
+}
+.feature-box{
+	width: 75%;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	background-color: #E44D38;
+	padding: 30px;
+	border-radius: 20px;
+}
+.freatures{
+	flex-basis: 50%;
+}
+.freatures-img{
+	flex-basis: 50%;
+	margin: auto;
+}
+.freatures-img img{
+	width: 70%;
+	border-radius: 10px;
+}
+.freatures h1{
+	font-size: 50px;
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: #000;
+}
+.freatures-desc{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	text-align: justify;
+}
+.freature-text li{
+	padding: 0 20px;
+	text-align: initial;
+	color: #fff;
+}
+@media screen and (max-width: 480px){
+	.title-text h1 {
+		font-size: 35px;
+	}
+	.freatures{
+		flex-basis: 100%;
+	}
+	.freatures-img{
+		flex-basis: 100%;
+	}
+	.freatures-img img{
+		width: 70%;
+	}
+}
+@media screen and (max-width: 1025px){
+	.freatures-img img{
+	width: 77%;
+	border-radius: 10px;
+	}
+}
+
+/*--service---*/
+
+#service{
+	width: 100%;
+	padding: 70px 0;
+	background: #cac9c8;
+}
+.service-box main{
+	display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+.product {
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/*---testimonial----*/
+
+#testimonial{
+	width: 100%;
+	padding: 70px 0;
+}
+.testimonial-row{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.testimonial-col{
+	flex-basis: 50%;
+	padding: 1px;
+	margin-bottom: 3-px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 3px #00968814;
+	cursor: pointer;
+}
