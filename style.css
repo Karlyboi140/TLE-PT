@@ -251,19 +251,22 @@ nav ul li a:hover::after{
 	width: 100%;
 	padding: 70px 0;
 }
-.testimonial-row{
-	width: 80%;
-	margin: auto;
+.video{
+	width: 40%;
+	padding: 50px;
+	margin: -50px auto 20px;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
 	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	padding-bottom: 35%;
+	height: 0;
+	overflow: hidden;
 }
-.testimonial-col{
-	flex-basis: 50%;
-	padding: 1px;
-	margin-bottom: 3-px;
-	border-radius: 5px;
-	box-shadow: 0 10px 20px 3px #00968814;
-	cursor: pointer;
+.video video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
